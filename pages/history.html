@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="../asset/vendors/tailwind/dist/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
     <link rel="shortcut icon" href="./asset/image/logo-rsud.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./assets/image/logo-rsud.png">
+
     <title>RSUD Kota Bogor</title>
 </head>
 <body style="font-family: 'Poppins', sans-serif;" class="text-gray-800">
     <header class="w-full bg-white shadow-md">
         <nav class="flex flex-col max-w-screen-xl md:max-w-screen-lg xl:max-w-screen-xl p-3 mx-auto lg:items-center lg:justify-between lg:flex-row">
             <div class="flex flex-row items-center justify-between">
-                <a href="./index.html" class="items-center">
-                    <img src="./asset/image/logo-rsud.png" width="50" height="50" alt="">
+                <a href="../index.html" class="items-center">
+                    <img src="../asset/image/logo-rsud.png" width="50" height="50" alt="">
                 </a>
                 <button class="p-3 rounded outline-none lg:hidden hover:bg-[#1c9285] hover:text-white nav-toggler" data-target="#navigation">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -54,20 +55,20 @@
                         <svg class="rtl:rotate-180 w-3 h-3 text-white mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
                         </svg>
-                        <span class="ms-1 md:ms-2 text-sm font-medium text-white">Hak dan Kewajiban Pasien</span>
+                        <span class="ms-1 md:ms-2 text-sm font-medium text-white">Sejarah</span>
                     </div>
                 </li>
             </ol>
         </nav>
     </section>
     <section class="w-full py-10">
-        <p>Konten Hak dan Kewajiban Pasien</p>
+        <p>Konten Sejarah</p>
     </section>
     <footer class="bg-[#1c9285]">
         <div class="max-w-screen-xl py-16 mx-auto px-4 md:px-6 lg:px-8">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <div>
-                    <img src="./asset/image/logo-rsud.png" class="mr-5 h-12" alt="logo" />
+                    <img src="../asset/image/logo-rsud.png" class="mr-5 h-12" alt="logo" />
                     <p class="max-w-xs mt-4 text-sm text-gray-200">
                         Rumah Sakit Umum Daerah Kota Bogor
                     </p>
@@ -86,35 +87,26 @@
                         </a>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2">
                     <div>
                         <p class="text-lg text-gray-300">Profile</p>
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-200">
-                            <a class="hover:text-white" href="./history.html"> Sejarah </a>
-                            <a class="hover:text-white" href="./mission.html"> Visi & Misi </a>
-                            <a class="hover:text-white" href="./culture.html"> Budaya & Struktur Organisasi </a>
-                            <a class="hover:text-white" href="./achievements.html"> Pencapaian & Inovasi </a>
-                            <a class="hover:text-white" href="./ethics.html"> Kode Etik </a>
-                            <a class="hover:text-white" href="./patient.html"> Hak dan Kewajiban Pasien </a>
+                            <a class="hover:text-white" href="./pages/history.html"> Sejarah </a>
+                            <a class="hover:text-white" href="./pages/mission.html"> Visi & Misi </a>
+                            <a class="hover:text-white" href="./pages/culture.html"> Budaya & Struktur Organisasi </a>
+                            <a class="hover:text-white" href="./pages/achievements.html"> Pencapaian & Inovasi </a>
+                            <a class="hover:text-white" href="./pages/ethics.html"> Kode Etik </a>
+                            <a class="hover:text-white" href="./pages/patient.html"> Hak dan Kewajiban Pasien </a>
                         </nav>
                     </div>
                     <div>
                         <p class="text-lg text-gray-300">Informasi</p>
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-200">
-                            <a class="hover:text-white" href="./policlinic.html"> Jadwal Poliklinik </a>
-                            <a class="hover:text-white" href="./training.html"> Diklat </a>
-                            <a class="hover:text-white" href="./integrity.html"> Zona Integritas </a>
-                            <a class="hover:text-white" href="./article.html"> Berita & Artikel </a>
-                            <a class="hover:text-white" href="./complaint.html"> Pengaduan </a>
-                        </nav>
-                    </div>
-                    <div>
-                        <p class="text-lg text-gray-300">Fasilitas</p>
-                        <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-200">
-                        <a class="hover:text-white" href> Pelayanan Medis </a>
-                        <a class="hover:text-white" href> Pelayanan Unggulan </a>
-                        <a class="hover:text-white" href> Fasilitas Publik </a>
-                        <a class="hover:text-white" href> Dukungan Medis </a>
+                            <a class="hover:text-white" href="./pages/policlinic.html"> Jadwal Poliklinik </a>
+                            <a class="hover:text-white" href="./pages/training.html"> Diklat </a>
+                            <a class="hover:text-white" href="./pages/integrity.html"> Zona Integritas </a>
+                            <a class="hover:text-white" href="./pages/article.html"> Berita & Artikel </a>
+                            <a class="hover:text-white" href="./pages/complaint.html"> Pengaduan </a>
                         </nav>
                     </div>
                 </div>
@@ -125,7 +117,6 @@
         </div>
     </footer>
     
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {

@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="./asset/vendors/OwlCarousel2-2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./asset/vendors/OwlCarousel2-2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./asset/vendors/tailwind/dist/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href="https://js.api.here.com/v3/3.1/mapsjs-ui.css" />
@@ -51,16 +52,16 @@
             </div>
             <div class="hidden top-navbar pt-5 lg:p-0 lg:block" id="navigation">
                 <div class="flex flex-col w-full items-start lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto lg:items-center lg:h-auto">
-                    <a href="./doctor.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-[#1c9285] hover:text-white">
+                    <a href="./pages/doctor.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-[#1c9285] hover:text-white">
                         <span>Cari Dokter</span>
                     </a>
-                    <a href="./policlinic.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-[#1c9285] hover:text-white">
+                    <a href="./pages/policlinic.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-[#1c9285] hover:text-white">
                         <span>Jadwal Poliklinik</span>
                     </a>
-                    <a href="./facility.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-[#1c9285] hover:text-white">
+                    <a href="./pages/facility.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-[#1c9285] hover:text-white">
                         <span>Fasilitas</span>
                     </a>
-                    <a href="./complaint.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-[#1c9285] hover:text-white">
+                    <a href="./pages/complaint.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-[#1c9285] hover:text-white">
                         <span>Pengaduan</span>
                     </a>
                 </div>
@@ -74,8 +75,8 @@
                 <p class="pt-3 lg:pt-4">Rumah sakit IDAMAN (Inovatif, Damai, Aman, Manfaat, Amanah, Nyaman) keluarga, 
                     hadir dengan penuh kasih sayang dan siap memberikan pelayanan terbaik bagi anda dan keluarga</p>
                 <div class="flex flex-row items-center justify-center lg:justify-start gap-3 pt-5">
-                    <a href="./policlinic.html" class="px-6 py-2 text-base uppercase text-white rounded-sm bg-[#1c9285] outline outline-1 outline-[#1c9285] hover:text-slate-100 focus:text-slate-100 focus:bg-[#1c9285] focus:outline-none focus:shadow-outline transition-colors ease-in-out duration-300">Jadwal Poliklinik</a>
-                    <a href="./mcu.html" class="inline-flex gap-1 items-center px-6 py-2 text-base uppercase text-[#1c9285] outline outline-1 outline-[#1c9285] rounded-sm hover:text-slate-100 hover:bg-[#1c9285] focus:text-slate-100 focus:bg-[#1c9285] focus:outline-none focus:shadow-outline transition-colors ease-in-out duration-300">
+                    <a href="./pages/policlinic.html" class="px-6 py-2 text-base uppercase text-white rounded-sm bg-[#1c9285] outline outline-1 outline-[#1c9285] hover:text-slate-100 focus:text-slate-100 focus:bg-[#1c9285] focus:outline-none focus:shadow-outline transition-colors ease-in-out duration-300">Jadwal Poliklinik</a>
+                    <a href="./pages/facility.html" class="inline-flex gap-1 items-center px-6 py-2 text-base uppercase text-[#1c9285] outline outline-1 outline-[#1c9285] rounded-sm hover:text-slate-100 hover:bg-[#1c9285] focus:text-slate-100 focus:bg-[#1c9285] focus:outline-none focus:shadow-outline transition-colors ease-in-out duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
                         </svg>                          
@@ -84,13 +85,13 @@
                 </div>
             </div>
             <div class="relative w-full lg:w-2/5 xl:w-1/2 h-full">
-                <img class="object-cover" src="./asset/image/banner/doctor.svg" alt="Banner">
+                <img class="object-cover" src="./asset/image/hero/hero-index.svg" alt="Banner">
             </div>
         </div>
     </section>
     <section class="relative w-full py-10">
-        <div class="absolute opacity-100 m-0 p-0 border-0 inset-0 -z-10 opacity-70">
-            <img class="absolute inset-0 box-border p-0 m-auto block w-0 h-0 min-w-full max-w-full min-h-full max-h-full object-cover" src="./asset/image/banner/IMG-9413.jpg" alt="">
+        <div class="absolute m-0 p-0 border-0 inset-0 -z-10 opacity-70">
+            <img class="absolute inset-0 box-border p-0 m-auto block w-0 h-0 min-w-full max-w-full min-h-full max-h-full object-cover" src="./asset/image/hero/mri.jpg" alt="">
         </div>
         <div class="w-full flex flex-row items-center px-3 md:px-10 lg:px-48 xl:px-56 2xl:px-80 py-14">
             <div class="text-center">
@@ -108,7 +109,7 @@
                         satu-satunya di bogor yang dilengkapi dengan mesin MRI dan CT-SCAN. 
                         Dengan peralatan canggih ini, kami dapat memberikan diagnosis yang akurat dan 
                         rencana perawatan yang lebih detail.</p>
-                    <a href="" class="py-2 px-4 bg-orange-500 text-white rounded-sm hover:bg-orange-600">Lihat Selengkapnya</a>
+                    <a href="./pages/facility.html" class="py-2 px-4 bg-orange-500 text-white rounded-sm hover:bg-orange-600">Lihat Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -127,14 +128,14 @@
                     <h1 class="text-2xl xl:text-3xl font-semibold text-[#1c9285]">Baca Juga Artikel Kami</h1>
                     <p class="mt-5">Temukan berita seputar RSUD Kota Bogor dan informasi kesehatan dari dokter spesialis kami</p>
                     <div class="flex py-3 mx-auto md:m-0">
-                        <a href="./article.html" class="relative py-2 flex items-center justify-center text-orange-400 overflow-hidden 
-                        transition-all duration-500 ease-in-out before:absolute before:top-0 before:-left-full 
-                        before:w-full before:h-full before:border-b-2 before:border-orange-600 
-                        before:transition-all before:duration-500 before:ease-in-out before:z-[-1] hover:before:left-0 hover:text-orange-600">
+                        <a href="./pages/article.html" class="flex gap-1 pb-2 items-center justify-center relative text-orange-500
+                        overflow-hidden transition-all duration-500 ease-in-out hover:scale-100 before:absolute text-sm
+                        before:top-0 before:-left-full before:w-full before:h-full before:border-b-2 before:border-orange-500
+                        before:transition-all before:duration-500 before:ease-in-out before:z-[-1] hover:before:left-0">
                             Lihat Selengkapnya
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 ml-1 uppercase">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                            </svg>   
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                            </svg>                              
                         </a>
                     </div>
                 </div>
@@ -190,7 +191,7 @@
                     <p class="text-sm md:text-base lg:text-lg text-black">palma</p>
                     <p class="text-xl md:text-2xl font-semibold text-[#1c9285] pt-3">Sekarang Ga Perlu Antri Pagi-Pagi</p>
                     <p class="text-sm md:text-base mt-1">Aplikasi palma, sudah bisa digunakan di RSUD Kota Bogor untuk memudahkan reservasi pendaftaran online</p>
-                    <img class="w-2/5 md:w-1/5 lg:w-1/4 pt-5" src="./asset/image/google-play-badge.png" alt="" srcset="">
+                    <img class="w-2/5 md:w-1/5 lg:w-1/4 pt-5" src="./asset/image/logo/google-play-badge.png" alt="" srcset="">
                 </div>
             </div>
         </div>
@@ -204,7 +205,7 @@
                 <img class="w-full h-24 object-contain" src="./asset/image/logo/BPJS_Ketenagakerjaan_logo.svg" alt="" srcset="">
                 <img class="w-full h-24 object-contain" src="./asset/image/logo/BCA_Life.svg" alt="" srcset="">
                 <img class="w-full h-24 object-contain" src="./asset/image/logo/BRI_Life_logo.svg" alt="" srcset="">
-                <img class="w-full h-24 object-contain" src="./asset/image/logo/Manulife_logo_(2018).svg" alt="" srcset="">  
+                <img class="w-full h-24 object-contain" src="./asset/image/logo/Manulife_logo.svg" alt="" srcset="">  
             </div>
         </div>
     </section>
@@ -262,35 +263,26 @@
                         </a>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2">
                     <div>
                         <p class="text-lg text-gray-300">Profile</p>
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-200">
-                            <a class="hover:text-white" href="./history.html"> Sejarah </a>
-                            <a class="hover:text-white" href="./mission.html"> Visi & Misi </a>
-                            <a class="hover:text-white" href="./culture.html"> Budaya & Struktur Organisasi </a>
-                            <a class="hover:text-white" href="./achievements.html"> Pencapaian & Inovasi </a>
-                            <a class="hover:text-white" href="./ethics.html"> Kode Etik </a>
-                            <a class="hover:text-white" href="./patient.html"> Hak dan Kewajiban Pasien </a>
+                            <a class="hover:text-white" href="./pages/history.html"> Sejarah </a>
+                            <a class="hover:text-white" href="./pages/mission.html"> Visi & Misi </a>
+                            <a class="hover:text-white" href="./pages/culture.html"> Budaya & Struktur Organisasi </a>
+                            <a class="hover:text-white" href="./pages/achievements.html"> Pencapaian & Inovasi </a>
+                            <a class="hover:text-white" href="./pages/ethics.html"> Kode Etik </a>
+                            <a class="hover:text-white" href="./pages/patient.html"> Hak dan Kewajiban Pasien </a>
                         </nav>
                     </div>
                     <div>
                         <p class="text-lg text-gray-300">Informasi</p>
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-200">
-                            <a class="hover:text-white" href="./policlinic.html"> Jadwal Poliklinik </a>
-                            <a class="hover:text-white" href="./training.html"> Diklat </a>
-                            <a class="hover:text-white" href="./integrity.html"> Zona Integritas </a>
-                            <a class="hover:text-white" href="./article.html"> Berita & Artikel </a>
-                            <a class="hover:text-white" href="./complaint.html"> Pengaduan </a>
-                        </nav>
-                    </div>
-                    <div>
-                        <p class="text-lg text-gray-300">Fasilitas</p>
-                        <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-200">
-                        <a class="hover:text-white" href> Pelayanan Medis </a>
-                        <a class="hover:text-white" href> Pelayanan Unggulan </a>
-                        <a class="hover:text-white" href> Fasilitas Publik </a>
-                        <a class="hover:text-white" href> Dukungan Medis </a>
+                            <a class="hover:text-white" href="./pages/policlinic.html"> Jadwal Poliklinik </a>
+                            <a class="hover:text-white" href="./pages/training.html"> Diklat </a>
+                            <a class="hover:text-white" href="./pages/integrity.html"> Zona Integritas </a>
+                            <a class="hover:text-white" href="./pages/article.html"> Berita & Artikel </a>
+                            <a class="hover:text-white" href="./pages/complaint.html"> Pengaduan </a>
                         </nav>
                     </div>
                 </div>
@@ -301,7 +293,6 @@
         </div>
     </footer>
     
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
     <script src="./asset/vendors/OwlCarousel2-2.3.4/owl.carousel.min.js"></script>
     <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>

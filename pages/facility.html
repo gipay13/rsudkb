@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../asset/vendors/tailwind/dist/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../asset/image/logo-rsud.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../assets/image/logo-rsud.png">
+    <title>RSUD Kota Bogor</title>
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class="text-gray-800">
+    <header class="w-full bg-white shadow-md">
+        <nav class="flex flex-col max-w-screen-xl md:max-w-screen-lg xl:max-w-screen-xl p-3 mx-auto lg:items-center lg:justify-between lg:flex-row">
+            <div class="flex flex-row items-center justify-between">
+                <a href="../index.html" class="items-center">
+                    <img src="../asset/image/logo-rsud.png" width="50" height="50" alt="">
+                </a>
+                <button class="p-3 rounded outline-none lg:hidden hover:bg-[#1c9285] hover:text-white nav-toggler" data-target="#navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                    </svg>              
+                </button>
+            </div>
+            <div class="hidden top-navbar pt-5 lg:p-0 lg:block" id="navigation">
+                <div class="flex flex-col w-full items-start lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto lg:items-center lg:h-auto">
+                    <a href="./doctor.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-[#1c9285] hover:text-white">
+                        <span>Cari Dokter</span>
+                    </a>
+                    <a href="./policlinic.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-[#1c9285] hover:text-white">
+                        <span>Jadwal Poliklinik</span>
+                    </a>
+                    <a href="./facility.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-[#1c9285] hover:text-white">
+                        <span>Fasilitas</span>
+                    </a>
+                    <a href="./complaint.html" class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center hover:bg-[#1c9285] hover:text-white">
+                        <span>Pengaduan</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="w-full py-10 bg-[#1c9285]">
+        <div class="px-5 lg:px-36 text-white">
+            <nav class="flex" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                    <li class="inline-flex items-center">
+                        <a href="../index.html" class="inline-flex items-center font-medium hover:text-gray-200">
+                            Home
+                        </a>
+                    </li>
+                    <li aria-current="page">
+                        <div class="flex items-center mt-0.5">
+                            <svg class="rtl:rotate-180 w-3 h-3 mx-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="ms-1 md:ms-2">Fasilitas</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+            <h1 class="text-4xl mt-14">Fasilitas Pelayanan</h1>
+        </div>
+    </section>
+    <section class="w-full py-10">
+        <div class="px-3 md:px-5 lg:px-36">
+            <div class="border-b border-gray-200 overflow-hidden overflow-x-auto">
+                <nav class="flex space-x-2" aria-label="Tabs" role="tablist">
+                    <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-[#5DADE2] hs-tab-active:text-[#5DADE2] py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-[#5DADE2] focus:outline-none focus:text-[#5DADE2] active" id="tabs-with-underline-item-1" data-hs-tab="#tabs-with-underline-1" aria-controls="tabs-with-underline-1" role="tab">
+                        Pelayanan Medis
+                    </button>
+                    <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-[#5DADE2] hs-tab-active:text-[#5DADE2] py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-[#5DADE2] focus:outline-none focus:text-[#5DADE2]" id="tabs-with-underline-item-2" data-hs-tab="#tabs-with-underline-2" aria-controls="tabs-with-underline-2" role="tab">
+                        Pelayanan Unggulan
+                    </button>
+                    <button type="button" class="hs-tab-active:font-semibold hs-tab-active:border-[#5DADE2] hs-tab-active:text-[#5DADE2] py-4 px-1 inline-flex items-center gap-x-2 border-b-2 border-transparent text-sm whitespace-nowrap text-gray-500 hover:text-[#5DADE2] focus:outline-none focus:text-[#5DADE2]" id="tabs-with-underline-item-3" data-hs-tab="#tabs-with-underline-3" aria-controls="tabs-with-underline-3" role="tab">
+                        Dukungan Medis
+                    </button>
+                </nav>
+            </div>
+              
+            <div class="mt-3">
+                <div id="tabs-with-underline-1" role="tabpanel" aria-labelledby="tabs-with-underline-item-1">
+                    <div class="hs-accordion-group">
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-one">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-one">
+                                Medical Checkup (MCU)
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-one" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-one">
+                                <div class="pb-4 px-5">
+                                    <ul class="list-disc list-inside text-sm">
+                                        <li>Paket Mahasiswa : Rp. 700.000</li>
+                                        <li>Paket Ruby : Rp. 1.050.000</li>
+                                        <li>Paket Calon ASN : Rp. 800.000</li>
+                                        <li>Pemeriksaan tambahan calon ASN : Rp. 150.000</li>
+                                        <li>Test Narkoba : Rp. 265.000</li>
+                                        <li>Paket MMPI : Rp. 800.000</li>
+                                        <li>Paket Emerald : Rp. 850.000</li>
+                                        <li>Paket Crystal : Rp. 400.000</li>
+                                        <li>Paket Diamond (PR) : Rp. 3.700.000</li>
+                                        <li>Paket Diamond (LK) : Rp. 3.200.000</li>
+                                        <li>Paket ASN di bawah 40 tahun : Rp. 491.000</li>
+                                        <li>Paket ASN di atas 40 tahun : Rp. 600.000</li>
+                                        <li>Psikotes ASN : Rp. 450.000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-two">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-two">
+                                Rawat Jalan
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-two" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-two">
+                                <div class="pb-4 px-5">
+                                    <div class="flex flex-wrap gap-10 text-sm">
+                                        <div>
+                                            <ul class="list-disc list-inside">
+                                                <li>Poliklinik Penyakit Dalam</li>
+                                                <li>Poliklinik Kesehatan Anak</li>
+                                                <li>Poliklinik Bedah Umum</li>
+                                                <li>Poliklinik Kebidanan dan Kandungan</li>
+                                                <li>Poliklinik Penyakit Syaraf</li>
+                                                <li>Poliklinik Penyakit THT dan KL</li>
+                                                <li>Poliklinik Bedah Syaraf</li>
+                                                <li>Poliklinik Psikologi</li>
+                                                <li>Poliklinik Paru</li>
+                                                <li>Poliklinik Urologi</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="list-disc list-inside">
+                                                <li>Poliklinik Penyakit Paru</li>
+                                                <li>Poliklinik Penyakit Jantung dan Pembuluh Darah</li>
+                                                <li>Poliklinik Sub Spesialis Jantung dan Pembuluh Darah Intervensi</li>
+                                                <li>Poliklinik Penyakit Kulit dan Kelamin</li>
+                                                <li>Poliklinik Rehabilitas Medik</li>
+                                                <li>Poliklinik Penyakit Mata</li>
+                                                <li>Poliklinik HIV</li>
+                                                <li>Klinik Deteksi Dini Penyakit Kanker Payudara</li>
+                                                <li>Poliklinik Akupuntur</li>
+                                                <li>Poliklinik DOTS</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul class="list-disc list-inside">
+                                                <li>Poliklinik Gigi Spesialis Bedah Mulut</li>
+                                                <li>Poliklinik Gigi dan Mulut</li>
+                                                <li>Poliklinik Penyakit Gigi Spesialis Periodontia</li>
+                                                <li>Poliklinik Konservasi Gigi</li>
+                                                <li>Poliklinik Bedah Orthopendic</li>
+                                                <li>Poliklinik Sub Spesialis Orthopendic Spine</li>
+                                                <li>Poliklinik Bedah Plastik</li>
+                                                <li>Poliklinik Kesehatan Jiwa</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-three">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-three">
+                                Rawat Inap
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-three" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-three">
+                                <div class="pb-4 px-5">
+                                    <div class="flex flex-wrap gap-10 text-sm">
+                                        <div>
+                                            <p>Kelas I</p>
+                                            <ul class="list-disc list-inside">
+                                                <li>Lavender I</li>
+                                                <li>Jasmin I</li>
+                                                <li>Vanda I</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p>Kelas II</p>
+                                            <ul class="list-disc list-inside">
+                                                <li>Lavender II</li>
+                                                <li>Jasmin II</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p>Kelas III</p>
+                                            <ul class="list-disc list-inside">
+                                                <li>Mawar/Intermediate</li>
+                                                <li>Jasmin III A</li>
+                                                <li>Jasmin III B</li>
+                                                <li>Jadmin Dewasa A</li>
+                                                <li>Jadmin Dewasa B</li>
+                                                <li>Lavender III</li>
+                                                <li>Flamboyan</li>
+                                                <li>Anyelir</li>
+                                                <li>Pafio A</li>
+                                                <li>Pafio B</li>
+                                                <li>Dahlia</li>
+                                                <li>Edelweis</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p>VIP</p>
+                                            <ul class="list-disc list-inside">
+                                                <li>Jasmin VIP</li>
+                                                <li>Catleya VIP</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p>Isolasi</p>
+                                            <ul class="list-disc list-inside">
+                                                <li>Isolasi Jasmin</li>
+                                                <li>Isolasi Pafio Dewasa B</li>
+                                                <li>Isolasi Anyelir</li>
+                                                <li>Isolasi Lavender</li>
+                                                <li>Isolasi Pafio TB B</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-four">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-four">
+                                Intensif
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-four" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-four">
+                                <div class="pb-4 px-5">
+                                    <ul class="list-disc list-inside text-sm">
+                                        <li>Intensive Care Unit (ICU)</li>
+                                        <li>High Care Unit (HCU)</li>
+                                        <li>Intensif Coronary Care Unit (ICCU)</li>
+                                        <li>Cardiovascular Care Unit (CVCU)</li>
+                                        <li>Neonatus Level II</li>
+                                        <li>Neonatal Intensive Care Unit (NICU)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-five">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-five">
+                                Instalasi Gawat Darurat (IGD)
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-five" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-five">
+                                <div class="pb-4 px-5">
+                                    <p class="text-sm">Salah satu unit dalam rumah sakit yang menyediakan penanganan awal pasien, sesuai dengan tingkat kegawatannya.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-with-underline-2" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-2">
+                    <div class="hs-accordion-group">
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-one">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-six">
+                                Jantung Terpadu
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-six" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-six">
+                                <div class="pb-4 px-5">
+                                    <p class="text-sm">...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-two">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-seven">
+                                Kanker Terpadu
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-five" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-seven">
+                                <div class="pb-4 px-5">
+                                    <p class="text-sm">...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-three">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-eight">
+                                Pelayanan Obstetri Neonatal Emergency Komprehensif (PONEK)
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-eight" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-eight">
+                                <div class="pb-4 px-5">
+                                    <p class="text-sm">...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tabs-with-underline-3" class="hidden" role="tabpanel" aria-labelledby="tabs-with-underline-item-3">
+                    <div class="hs-accordion-group">
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-one">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-six">
+                                Cathlab
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-six" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-six">
+                                <div class="pb-4 px-5">
+                                    <p class="text-sm">Disebut juga kateterisasi jantung dan angiografi merupakan tindakan atau prosedur medis 
+                                        kardiologi diagnostic invasive. Prosedur ini dilakukan dengan menggunakan sinar-X untuk membantu 
+                                        menampilkan gambaran pembuluh darah di berbagai organ tubuh. Prosedur ini dapat 
+                                        dimanfaatkan untuk deteksi dini sebagai tindakan pencegahan terhadap banyak masalah kesehatan. Contohnya, 
+                                        deteksi dini pada orang-orang yang memiliki riwayat masalah kesehatan pada jantung.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-two">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-seven">
+                                Endoskopi
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-five" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-seven">
+                                <div class="pb-4 px-5">
+                                    <p class="text-sm">Tindakan medis dengan memasukkan endoskop atau selang tipis dan panjang secara langsung 
+                                        ke dalam tubuh melalui mulut atau dubur ke dalam saluran cerna guna mengamati organ dalam atau jaringan 
+                                        secara detail. Prosedur ini juga dapat digunakan untuk tujuan lain, termasuk operasi kecil.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-three">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-eight">
+                                Laparoskopi
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-eight" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-eight">
+                                <div class="pb-4 px-5">
+                                    <p class="text-sm">Laparoskopi merupakan satu dari berbagai jenis tindakan endoskopi. Laparoskopi digunakan 
+                                        untuk melihat kondisi rongga perut dan panggul. Ini adalah prosedur bedah minimal invasif dengan 
+                                        alat bernama “laparoskop”. Alat ini berbentuk seperti tabung dengan kamera kecil di ujungnya. 
+                                        Dengan laparoskop, dokter bedah dapat melihat dan melakukan operasi di dalam rongga perut atau panggul 
+                                        tanpa membuat sayatan besar pada kulit. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-four">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-eight">
+                                Bronkoskopi
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-eight" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-eight">
+                                <div class="pb-4 px-5">
+                                    <p class="text-sm">Tindakan medis yang bertujuan untuk melakukan visualisasi trakea dan bronkus, melalui bronkoskop, 
+                                        yang berfungsi dalam prosedur diagnostik dan terapi penyakit paru.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-five">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-eight">
+                                4D USG
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-eight" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-eight">
+                                <div class="pb-4 px-5">
+                                    <p class="text-sm">USG 4D adalah salah satu jenis USG, yang merupakan pengembangan dari pemeriksaan USG 2D dan 3D. 
+                                        USG 4D memiliki manfaat yang sama dengan USG 2D dan 3D, yaitu memeriksa kondisi dan perkembangan janin dalam 
+                                        kandungan. Namun, hasil pemeriksaan USG 4D lebih detail karena menghasilkan gambar bergerak dibanding USG 2D 
+                                        dan 3D yang menghasilkan gambar diam. Karena menampilkan efek video, orang tua dapat melihat wajah janin dengan 
+                                        jelas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-six">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-eight">
+                                CT Scan
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-eight" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-eight">
+                                <div class="pb-4 px-5">
+                                    <p class="text-sm">CT scan atau computed tomography scan merupakan prosedur pencitraan medis dengan menggunakan sinar-X 
+                                        dan komputer, sehingga dapat dihasilkan gambar yang sangat detail dalam bentuk 3D. Pasien dimasukkan ke dalam alat yang 
+                                        berupa terowongan, dan beberapa detik kemudian, gambaran organ-organ dalam tubuh pasien akan terlihat jelas sehingga 
+                                        membantu dokter dalam mendiagnosis kelainan yang terjadi.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-seven">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-eight">
+                                MRI
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-eight" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-eight">
+                                <div class="pb-4 px-5">
+                                    <p class="text-sm">Magnetic Resonance Imaging atau MRI adalah pemeriksaan medis menggunakan teknologi magnet serta gelombang 
+                                        radio untuk mengidentifikasi kondisi tubuh Anda. Bisa dikatakan, MRI adalah semacam scanner yang mampu melihat hingga ke bagian organ dalam.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border -mt-px first:rounded-t-lg last:rounded-b-lg" id="hs-active-bordered-heading-eight">
+                            <button class="hs-accordion-toggle hs-accordion-active:text-black inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-500 py-4 px-5 hover:text-black" aria-controls="hs-basic-active-bordered-collapse-eight">
+                                ESWL
+                                <svg class="hs-accordion-active:hidden block w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                <svg class="hs-accordion-active:block hidden w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                            </button>
+                            <div id="hs-basic-active-bordered-collapse-eight" class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300" aria-labelledby="hs-active-bordered-heading-eight">
+                                <div class="pb-4 px-5">
+                                    <p class="text-sm">ESWL menggunakan alat yang dapat memancarkan gelombang kejut. Gelombang kejut ini dikonsentrasikan di 
+                                        sekitar ginjal untuk menghancurkan batu ginjal menjadi pecahan-pecahan yang lebih kecil, sehingga dapat dikeluarkan 
+                                        bersama urine.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-[#1c9285]">
+        <div class="max-w-screen-xl py-16 mx-auto px-4 md:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                <div>
+                    <img src="../asset/image/logo-rsud.png" class="mr-5 h-12" alt="logo" />
+                    <p class="max-w-xs mt-4 text-sm text-gray-200">
+                        Rumah Sakit Umum Daerah Kota Bogor
+                    </p>
+                    <div class="flex mt-8 space-x-6">
+                        <a href="" class="" target="_blank" rel="noreferrer">
+                            <span class="sr-only"> Instagram </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 fill-gray-200" viewBox="0 0 16 16">
+                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                            </svg>
+                        </a>
+                        <a href="" class="" target="_blank" rel="noreferrer">
+                            <span class="sr-only"> Youtube </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 fill-gray-200" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2">
+                    <div>
+                        <p class="text-lg text-gray-300">Profile</p>
+                        <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-200">
+                            <a class="hover:text-white" href="./history.html"> Sejarah </a>
+                            <a class="hover:text-white" href="./mission.html"> Visi & Misi </a>
+                            <a class="hover:text-white" href="./culture.html"> Budaya & Struktur Organisasi </a>
+                            <a class="hover:text-white" href="./achievements.html"> Pencapaian & Inovasi </a>
+                            <a class="hover:text-white" href="./ethics.html"> Kode Etik </a>
+                            <a class="hover:text-white" href="./patient.html"> Hak dan Kewajiban Pasien </a>
+                        </nav>
+                    </div>
+                    <div>
+                        <p class="text-lg text-gray-300">Informasi</p>
+                        <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-200">
+                            <a class="hover:text-white" href="./policlinic.html"> Jadwal Poliklinik </a>
+                            <a class="hover:text-white" href="./training.html"> Diklat </a>
+                            <a class="hover:text-white" href="./integrity.html"> Zona Integritas </a>
+                            <a class="hover:text-white" href="./article.html"> Berita & Artikel </a>
+                            <a class="hover:text-white" href="./complaint.html"> Pengaduan </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-8 text-xs text-gray-200">
+                © 2023 RSUD Kota Bogor
+            </p>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="../node_modules/preline/dist/preline.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".nav-toggler").each(function(_, navToggler) {
+                var target = $(navToggler).data("target");
+                $(navToggler).on("click", function() {
+                    $(target).animate({
+                        height: "toggle"
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

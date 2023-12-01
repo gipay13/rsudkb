@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="../asset/vendors/tailwind/dist/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    
     <link rel="shortcut icon" href="./asset/image/logo-rsud.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="./assets/image/logo-rsud.png">
+
     <title>RSUD Kota Bogor</title>
 </head>
 <body style="font-family: 'Poppins', sans-serif;" class="text-gray-800">
     <header class="w-full bg-white shadow-md">
         <nav class="flex flex-col max-w-screen-xl md:max-w-screen-lg xl:max-w-screen-xl p-3 mx-auto lg:items-center lg:justify-between lg:flex-row">
             <div class="flex flex-row items-center justify-between">
-                <a href="./index.html" class="items-center">
-                    <img src="./asset/image/logo-rsud.png" width="50" height="50" alt="">
+                <a href="../index.html" class="items-center">
+                    <img src="../asset/image/logo-rsud.png" width="50" height="50" alt="">
                 </a>
                 <button class="p-3 rounded outline-none lg:hidden hover:bg-[#5DADE2] hover:text-white nav-toggler" data-target="#navigation">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -46,80 +47,87 @@
             <div class="w-full md:w-1/2">
                 <h1 class="text-2xl lg:text-4xl font-semibold text-[#5DADE2]">Whistleblowing System RSUD Kota Bogor</h1>
                 <p class="mb-6 mt-2">Mari Bersama-sama Menciptakan Lingkungan Kerja Yang Jujur dan Bersih, Laporkan Setiap Pelanggaran Yang Terjadi Di Lingkungan Kerja</p>
-                <a href="" class="inline-flex gap-2 items-center text-orange-500 hover:text-orange-700">
-                    Buat Pelaporan
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <a href="./article.html" class="inline-flex gap-1 pb-2 items-center justify-center lg:justify-start relative text-orange-500
+                    overflow-hidden transition-all duration-500 ease-in-out hover:scale-100 before:absolute
+                    before:top-0 before:-left-full before:w-full before:h-full before:border-b-2 before:border-orange-500
+                    before:transition-all before:duration-500 before:ease-in-out before:z-[-1] hover:before:left-0">
+                    Buat Laporan
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                    </svg>                      
+                    </svg>                              
                 </a>
             </div>
             <div class="w-full md:w-1/2">
-                <img class="object-cover" src="./asset/image/law-firm.svg" alt="" srcset="">
+                <img class="object-cover" src="../asset/image/hero/hero-complaint-1.svg" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+    <section class="w-full">
+        <div class="flex flex-col md:flex-row gap-28 md:gap-20 px-3 md:px-5 lg:px-24 xl:px-32 text-center md:text-start">
+            <div class="w-full md:w-1/2">
+                <img class="object-cover" src="../asset/image/hero/hero-complaint-2.svg" alt="" srcset="">
+            </div>
+            <div class="w-full md:w-1/2 flex items-center">
+                <div class="flex flex-col">
+                    <h1 class="pb-4 text-xl font-semibold text-orange-500">Kriteria Pengaduan</h1>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                            </svg>
+                            <span class="font-semibold group-hover:text-white">Kerugian keuangan negara</span>
+                        </div>
+                        <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                            </svg>
+                            <span class="font-semibold group-hover:text-white">Suap menyuap</span>
+                        </div>
+                        <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                            </svg>
+                            <span class="font-semibold group-hover:text-white">Penggelapan dalam jabatan</span>
+                        </div>
+                        <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                            </svg>
+                            <span class="font-semibold group-hover:text-white">Perbuatan pemerasan</span>
+                        </div>
+                        <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                            </svg>
+                            <span class="font-semibold group-hover:text-white">Perbuatan curang</span>
+                        </div>
+                        <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                            </svg>
+                            <span class="font-semibold group-hover:text-white">Benturan kepentingan</span>
+                        </div>
+                        <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
+                            </svg>
+                            <span class="font-semibold group-hover:text-white">Gratifikasi</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="w-full py-10">
-        <div class="flex flex-col md:flex-row gap-28 md:gap-20 px-3 md:px-5 lg:px-24 xl:px-32 text-center md:text-start">
-            <div class="w-full md:w-1/2">
-                <h1 class="pb-4 text-xl font-semibold text-orange-500">Definisi Whistleblowing System</h1>
-                <p class="">Mekanisme penyampaian pengaduan dugaan tindak pidana tertentu yang telah terjadi atau akan 
-                    terjadi yang melibatkan pegawai dan orang lain yang yang dilakukan dalam organisasi tempatnya bekerja, 
-                    dimana pelapor bukan merupakan bagian dari pelaku kejahatan yang dilaporkannya.</p>
-            </div>
-            <div class="w-full md:w-1/2">
-                <h1 class="pb-4 text-xl font-semibold text-orange-500">Kriteria Pengaduan</h1>
-                <div class="grid grid-cols-2 gap-3">
-                    <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-                        </svg>
-                        <span class="font-semibold group-hover:text-white">Kerugian keuangan negara</span>
-                    </div>
-                    <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-                        </svg>
-                        <span class="font-semibold group-hover:text-white">Suap menyuap</span>
-                    </div>
-                    <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-                        </svg>
-                        <span class="font-semibold group-hover:text-white">Penggelapan dalam jabatan</span>
-                    </div>
-                    <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-                        </svg>
-                        <span class="font-semibold group-hover:text-white">Perbuatan pemerasan</span>
-                    </div>
-                    <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-                        </svg>
-                        <span class="font-semibold group-hover:text-white">Perbuatan curang</span>
-                    </div>
-                    <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-                        </svg>
-                        <span class="font-semibold group-hover:text-white">Benturan kepentingan</span>
-                    </div>
-                    <div class="flex gap-3 items-center py-4 px-4 shadow box-shadow-xl group hover:bg-[#5DADE2] rounded-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9 stroke-[#5DADE2] group-hover:stroke-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z" />
-                        </svg>
-                        <span class="font-semibold group-hover:text-white">Gratifikasi</span>
-                    </div>
-                </div>
-            </div>
+        <div class="px-3 md:px-5 lg:px-24 xl:px-32">
+            <canvas id="myChart"></canvas>
         </div>
     </section>
     <footer class="bg-[#5DADE2]">
         <div class="max-w-screen-xl py-16 mx-auto px-4 md:px-6 lg:px-8">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <div>
-                    <img src="./asset/image/logo-rsud.png" class="mr-5 h-12" alt="logo" />
+                    <img src="../asset/image/logo-rsud.png" class="mr-5 h-12" alt="logo" />
                     <p class="max-w-xs mt-4 text-sm text-gray-200">
                         Rumah Sakit Umum Daerah Kota Bogor
                     </p>
@@ -138,7 +146,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2">
                     <div>
                         <p class="text-lg text-gray-300">Profile</p>
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-200">
@@ -160,15 +168,6 @@
                             <a class="hover:text-white" href="./complaint.html"> Pengaduan </a>
                         </nav>
                     </div>
-                    <div>
-                        <p class="text-lg text-gray-300">Fasilitas</p>
-                        <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-200">
-                        <a class="hover:text-white" href> Pelayanan Medis </a>
-                        <a class="hover:text-white" href> Pelayanan Unggulan </a>
-                        <a class="hover:text-white" href> Fasilitas Publik </a>
-                        <a class="hover:text-white" href> Dukungan Medis </a>
-                        </nav>
-                    </div>
                 </div>
             </div>
             <p class="mt-8 text-xs text-gray-200">
@@ -177,8 +176,8 @@
         </div>
     </footer>
     
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         $(document).ready(function() {
             $(".nav-toggler").each(function(_, navToggler) {
@@ -188,6 +187,27 @@
                         height: "toggle"
                     });
                 });
+            });
+
+            const ctx = document.getElementById('myChart');
+
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3, 5, 2, 3],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
             });
         });
     </script>
