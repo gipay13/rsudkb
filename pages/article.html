@@ -12,10 +12,20 @@
     <link rel="apple-touch-icon" href="../assets/image/logo-rsud.png">
     
     <title>RSUD Kota Bogor</title>
+
+    <style>          
+        .paragraph-break {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            white-space: pre-wrap;
+        }
+    </style>
 </head>
 <body style="font-family: 'Poppins', sans-serif;" class="text-gray-800">
-    <header class="w-full bg-white shadow-md">
-        <nav class="flex flex-col max-w-screen-xl md:max-w-screen-lg xl:max-w-screen-xl p-3 mx-auto lg:items-center lg:justify-between lg:flex-row">
+    <header class="w-full shadow-md">
+        <nav class="flex flex-col max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl p-5 mx-auto lg:items-center lg:justify-between lg:flex-row">
             <div class="flex flex-row items-center justify-between">
                 <a href="../index.html" class="items-center">
                     <img src="../asset/image/logo-rsud.png" width="50" height="50" alt="">
@@ -45,7 +55,7 @@
         </nav>
     </header>
     <section class="w-full py-10">
-        <nav class="flex px-5 lg:px-36" aria-label="Breadcrumb">
+        <nav class="flex px-5 md:px-10 lg:px-36" aria-label="Breadcrumb">
             <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
                 <li class="inline-flex items-center">
                     <a href="../index.html" class="inline-flex items-center text-sm font-medium text-gray-600 hover:text-gray-800">
@@ -72,7 +82,7 @@
                 <div class="relative">
                     <h1 class="text-4xl 2xl:text-5xl font-semibold text-[#1c9285]">Sejarah RSUD Kota Bogor</h1>
                     <p class="mt-2 mb-7">Ketahui perjalanan kami dalam membangun rumah sakit IDAMAN (Inovatif, Damai, Aman, Manfaat, Amanah, Nyaman) keluarga</p>
-                    <a href="./history.html" class="py-2 px-7 bg-orange-500 text-white rounded-md hover:bg-orange-600">BACA</a>
+                    <a href="./about.html" class="py-2 px-7 bg-orange-500 text-white rounded-md hover:bg-orange-600">BACA</a>
                 </div>
             </div>
         </div>
@@ -97,38 +107,36 @@
                         </div>
                     </form>
                 </div>
-            </div> 
+            </div>
             <div class="flex justify-center gap-3 pt-5">
-                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-sm">Badge</span>
-                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-sm">Badge</span>
-                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-sm">Badge</span>
-                <span class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-200 bg-white text-gray-800 shadow-sm">Badge</span>
+                <a href="" class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-200 bg-white text-gray-800 hover:bg-[#1c9285] hover:text-white">Berita RSUD</a>
+                <a href="" class="inline-flex items-center gap-x-1.5 py-1.5 px-3 rounded-full text-xs font-medium border border-gray-200 bg-white text-gray-800 hover:bg-[#1c9285] hover:text-white">Kesehatan</a>
             </div>
             <div class="flex flex-col gap-5 pt-10">
-                <a href="#" class="w-full flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100">
+                <a href="./article-detail.html" class="w-full flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100">
                     <img class="object-cover w-full md:w-1/3 rounded-t-lg h-56" src="https://placehold.co/600x400" alt="">
-                    <div class="flex flex-col justify-between p-4 leading-normal">
+                    <div class="w-full md:w-2/3 flex flex-col justify-between p-4 leading-normal">
                         <p class="mb-5 text-sm text-orange-400">Kategori</p>
-                        <h5 class="text-2xl md:text-xl xl:text-2xl font-bold tracking-tight text-gray-900">Manfaat Buah Khuldi Untuk Kesehatan Kulit</h5>
-                        <p class="mb-3 text-sm text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <h5 class="text-2xl md:text-xl xl:text-2xl font-bold tracking-tight text-gray-900 mb-1 paragraph-break">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero maxime blanditiis odit earum quidem</h5>
+                        <p class="mb-3 text-sm text-gray-700 paragraph-break">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
                         <p class="text-xs text-gray-400">21 November, 2022</p>
                     </div>
                 </a>
-                <a href="#" class="w-full flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100">
+                <a href="./article-detail.html" class="w-full flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100">
                     <img class="object-cover w-full md:w-1/3 rounded-t-lg h-56" src="https://placehold.co/600x400" alt="">
-                    <div class="flex flex-col justify-between p-4 leading-normal">
+                    <div class="w-full md:w-2/3 flex flex-col justify-between p-4 leading-normal">
                         <p class="mb-5 text-sm text-orange-400">Kategori</p>
-                        <h5 class="text-2xl md:text-xl xl:text-2xl font-bold tracking-tight text-gray-900">Manfaat Buah Khuldi Untuk Kesehatan Kulit</h5>
-                        <p class="mb-3 text-sm text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <h5 class="text-2xl md:text-xl xl:text-2xl font-bold tracking-tight text-gray-900 mb-1 paragraph-break">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo quam vitae amet voluptates accusamus obcaecati iste nam veritatis ducimus natus repellat accusantium magni maxime laborum, magnam ullam architecto minus impedit?</h5>
+                        <p class="mb-3 text-sm text-gray-700 paragraph-break">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
                         <p class="text-xs text-gray-400">21 November, 2022</p>
                     </div>
                 </a>
-                <a href="#" class="w-full flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100">
+                <a href="./article-detail.html" class="w-full flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row hover:bg-gray-100">
                     <img class="object-cover w-full md:w-1/3 rounded-t-lg h-56" src="https://placehold.co/600x400" alt="">
-                    <div class="flex flex-col justify-between p-4 leading-normal">
+                    <div class="w-full md:w-2/3 flex flex-col justify-between p-4 leading-normal">
                         <p class="mb-5 text-sm text-orange-400">Kategori</p>
-                        <h5 class="text-2xl md:text-xl xl:text-2xl font-bold tracking-tight text-gray-900">Manfaat Buah Khuldi Untuk Kesehatan Kulit</h5>
-                        <p class="mb-3 text-sm text-gray-700">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <h5 class="text-2xl md:text-xl xl:text-2xl font-bold tracking-tight text-gray-900 mb-1 paragraph-break">Manfaat Buah Khuldi Untuk Kesehatan Kulit</h5>
+                        <p class="mb-3 text-sm text-gray-700 paragraph-break">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem beatae amet nulla obcaecati, ab cupiditate ut neque aliquam itaque fuga alias aperiam quibusdam rem et quae eveniet corporis voluptatibus natus?</p>
                         <p class="text-xs text-gray-400">21 November, 2022</p>
                     </div>
                 </a>
@@ -162,10 +170,7 @@
                     <div>
                         <p class="text-lg text-gray-300">Profile</p>
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-200">
-                            <a class="hover:text-white" href="./history.html"> Sejarah </a>
-                            <a class="hover:text-white" href="./mission.html"> Visi & Misi </a>
-                            <a class="hover:text-white" href="./culture.html"> Budaya & Struktur Organisasi </a>
-                            <a class="hover:text-white" href="./achievements.html"> Pencapaian & Inovasi </a>
+                            <a class="hover:text-white" href="./about.html"> Tentang Kami </a>
                         </nav>
                     </div>
                     <div>
